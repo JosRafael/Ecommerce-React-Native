@@ -20,7 +20,7 @@ export default function ProductCard({
   const [count, setCount] = React.useState(1);
   const { ColorScheme } = useColorScheme;
   return (
-    <View>
+    <View className="w-full bg-white dark:bg-gray-50/10 rounded-3xl p-5 my-5">
       <Text>{title}</Text>
       <Text>{description}</Text>
       <Text>{price}</Text>
