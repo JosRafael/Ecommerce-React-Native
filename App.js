@@ -9,7 +9,7 @@ export default function App() {
     <SafeAreaView className="flex-1 items-center justify-center bg-gray-200 dark:bg-black">
       <View className={"flex-row w-full gap-5"}>
         <Text className="dark:text-white text-2xl font-bold">
-          New collection
+          Nova Coleção!
         </Text>
         <Switch value={colorScheme === "dark"} onChange={toggleColorScheme} />
       </View>
