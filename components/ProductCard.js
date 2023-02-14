@@ -24,10 +24,13 @@ export default function ProductCard({
         <View className="bg-white rounded-xl">
             <Image source={{uri: image}} className="w-full h-72" style={{resizeMode: "contain"}}/>
         </View>
-        <Text>{category}</Text>
+       <View className="mt-5">
+       <Text className="text-sm text-black/60 dark:text-white/70">{category}</Text>
       <Text>{title}</Text>
       <Text>{description}</Text>
       <Text>{price}</Text>
+       </View>
+       
     </View>
   );
 }
