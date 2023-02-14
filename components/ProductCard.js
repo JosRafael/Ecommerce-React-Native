@@ -21,9 +21,10 @@ export default function ProductCard({
   const { ColorScheme } = useColorScheme;
   return (
     <View className="w-full bg-white dark:bg-gray-50/10 rounded-3xl p-5 my-5">
-        <View>
+        <View className="bg-white rounded-xl">
             <Image source={{uri: image}} className="w-full h-72" style={{resizeMode: "contain"}}/>
         </View>
+        <Text>{category}</Text>
       <Text>{title}</Text>
       <Text>{description}</Text>
       <Text>{price}</Text>
