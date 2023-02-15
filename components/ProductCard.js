@@ -26,7 +26,21 @@ export default function ProductCard({
         </View>
        <View className="mt-5">
        <Text className="text-sm text-black/60 dark:text-white/70">{category}</Text>
-      <Text>{title}</Text>
+      <Text className="text-lg font-semibold dark:text-white">{title}</Text>
+      <View>
+        <AntDesign
+        name="minuscircleo"
+        size={24}
+        color={ColorScheme === "dark" ? "light" : "dark"}
+        onPress= {()=> setCount(count-1)}
+        />
+           <AntDesign
+        name="pluscircleo"
+        size={24}
+        color={ColorScheme === "dark" ? "light" : "dark"}
+        onPress= {()=> setCount(count+1)}
+        />
+      </View>
       <Text>{description}</Text>
       <Text>{price}</Text>
        </View>
