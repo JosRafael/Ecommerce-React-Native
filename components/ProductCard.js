@@ -27,13 +27,14 @@ export default function ProductCard({
        <View className="mt-5">
        <Text className="text-sm text-black/60 dark:text-white/70">{category}</Text>
       <Text className="text-lg font-semibold dark:text-white">{title}</Text>
-      <View>
+      <View className="flex-row gap-5">
         <AntDesign
         name="minuscircleo"
         size={24}
         color={ColorScheme === "dark" ? "light" : "dark"}
         onPress= {()=> setCount(count-1)}
         />
+        <Text className={"text-xl dark:text-white"}>{count}</Text>
            <AntDesign
         name="pluscircleo"
         size={24}
